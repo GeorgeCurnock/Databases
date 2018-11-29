@@ -1,5 +1,0 @@
-Menu ID: 4
-Menu Description: Chicken Chow Mein
-Cost per person: 1949
-Number of parties featuring this menu: 9
-Number of guests that used this menu: 5231

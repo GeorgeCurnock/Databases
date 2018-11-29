@@ -1,7 +1,5 @@
 package assignment;
 
-import javax.xml.transform.Result;
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -174,9 +172,9 @@ public class ReportGenerator {
                 bf.write("\nMenu: " + menuDescription);
                 bf.write("\nEntertainment: " + entertainmentDescription);
                 bf.write("\nGuest Count: " + numberOfGuests);
-                bf.write("\nQuoted party cost: " + price);
-                bf.write("\nTotal cost of party: "+ totalcost);
-                bf.write("\nNet profit: " + netProfit);
+                bf.write("\nQuoted party cost: £" + (float)price/100);
+                bf.write("\nTotal cost of party: £"+ (float)totalcost/100);
+                bf.write("\nNet profit: £" + (float)netProfit/100);
                 bf.close();
                 return true;
         } catch (SQLException e) {

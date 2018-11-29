@@ -26,6 +26,7 @@ public class CreateTables {
             );
             // Executes the update
             dropSchema.executeUpdate();
+
             // Creates a new schema in the place of the previous
             PreparedStatement createScheme = conn.prepareStatement(
                     "CREATE SCHEMA public"
@@ -36,32 +37,30 @@ public class CreateTables {
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println("Error dropping tables");
+            return false;
         }
-        return false;
     }
 
-    private static boolean createEntertainment() {
+    private static void createEntertainment() {
         try {
             PreparedStatement createEntertainmentTable = conn.prepareStatement(
                     "" +
                             "CREATE TABLE Entertainment(" +
                             "eid            SERIAL," +
-                            "description    VARCHAR," +
+                            "description    TEXT," +
                             "costprice      INTEGER," +
                             "PRIMARY KEY (eid)," +
                             "CHECK (costprice >= 0)" +
                             ")"
             );
             createEntertainmentTable.executeUpdate();
-            return true;
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println("Error creating Table: Entertainment");
         }
-        return false;
     }
 
-    private static boolean createMenu() {
+    private static void createMenu() {
         try {
             PreparedStatement createMenuTable = conn.prepareStatement(
                     "" +
@@ -74,48 +73,44 @@ public class CreateTables {
                             ")"
             );
             createMenuTable.executeUpdate();
-            return true;
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println("Error creating Table: Menu");
         }
-        return false;
     }
 
-    private static boolean createVenue() {
+    private static void createVenue() {
         try {
             PreparedStatement createVenueTable = conn.prepareStatement(
                     "" +
                             "CREATE TABLE Venue(" +
                             "vid            SERIAL," +
-                            "name    VARCHAR(50)," +
+                            "name           VARCHAR(50)," +
                             "venuecost      INTEGER," +
                             "PRIMARY KEY (vid)," +
                             "CHECK (venuecost >= 0)" +
                             ")"
             );
             createVenueTable.executeUpdate();
-            return true;
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println("Error creating Table: Venue");
         }
-        return false;
     }
 
-    private static boolean createParty() {
+    private static void createParty() {
         try {
             PreparedStatement createPartyTable = conn.prepareStatement(
                     "" +
                             "CREATE TABLE Party(" +
                             "pid            SERIAL," +
-                            "name    VARCHAR(50)," +
+                            "name           VARCHAR(200)," +
                             "mid            INTEGER," +
                             "vid            INTEGER," +
                             "eid            INTEGER," +
-                            "price      INTEGER," +
-                            "timing      TIMESTAMP," +
-                            "numberofguests      INTEGER," +
+                            "price          INTEGER," +
+                            "timing         TIMESTAMP," +
+                            "numberofguests INTEGER," +
                             "PRIMARY KEY (pid)," +
                             "CHECK (price >= 0)," +
                             "CHECK (numberofguests >= 0)," +
@@ -131,11 +126,9 @@ public class CreateTables {
                             ")"
             );
             createPartyTable.executeUpdate();
-            return true;
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println("Error creating Table: Party");
         }
-        return false;
     }
 }
