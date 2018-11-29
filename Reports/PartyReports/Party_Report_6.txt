@@ -1,0 +1,9 @@
+Party ID: 6
+Party Name: George's party
+Venue: Park
+Menu: Roast Dinner
+Entertainment: Sports
+Guest Count: 288
+Quoted party cost: £5653.53
+Total cost of party: £5598.01
+Net profit: £55.52

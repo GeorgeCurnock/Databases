@@ -1,0 +1,5 @@
+Menu ID: 2
+Menu Description: Giant Cake
+Cost per person: 1386
+Number of parties featuring this menu: 9
+Number of guests that used this menu: 3900
