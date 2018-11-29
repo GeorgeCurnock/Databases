@@ -1,0 +1,5 @@
+Menu ID: 3
+Menu Description: Hot Dog
+Cost per person: 1855
+Number of parties featuring this menu: 6
+Number of guests that used this menu: 3466

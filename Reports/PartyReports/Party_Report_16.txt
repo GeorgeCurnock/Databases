@@ -1,0 +1,9 @@
+Party ID: 16
+Party Name: Yasmin
+Venue: House
+Menu: Chicken Chow Mein
+Entertainment: drawing
+Guest Count: 855
+Quoted party cost: 2005686
+Total cost of party: 2004419
+Net profit: 1267

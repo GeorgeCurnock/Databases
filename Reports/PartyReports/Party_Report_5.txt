@@ -1,0 +1,9 @@
+Party ID: 5
+Party Name: Megan
+Venue: Concert Hall
+Menu: Salad
+Entertainment: Clown
+Guest Count: 566
+Quoted party cost: 1594559
+Total cost of party: 1587306
+Net profit: 7253
