@@ -1,0 +1,1 @@
+An assignment for university where I implemented a party management system using SQL and JDBC. I needed to design the tables that held the information as well as the queries and commands that are used to call and edit the database.
