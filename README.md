@@ -1,2 +1,2 @@
 # Databases
-Github repo for a universityi Databases module
+Github repo for a university Databases module
